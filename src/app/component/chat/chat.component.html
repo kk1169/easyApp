@@ -1,0 +1,5 @@
+<div *ngFor="let c of childMessage" >
+        {{c.sid}} - {{c.rid}}
+        <input type="text" [(ngModel)]='m'/>
+        <button (click)="addNewMsg(c.sid,c.rid)">click</button>
+</div>

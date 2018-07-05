@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let u of userlist" (click)="openChat(u.c_user_id)">{{u.c_user_name}} ({{u.c_user_loggedin}})</li>
+</ul>
+
+
+<app-chat [childMessage]="chat"></app-chat>
