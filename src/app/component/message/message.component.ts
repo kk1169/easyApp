@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DomSanitizer,SafeResourceUrl,} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-message',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageComponent implements OnInit {
 
-  constructor() { }
+  loading=true;
+  iframevalue = "";
+  url: SafeResourceUrl;
+  
+  constructor(public sanitizer:DomSanitizer) { }
 
   ngOnInit() {
+  }
+
+  onloading(){
+    this.loading=false;
+    console.log('now load');
+  }
+
+  selectedUser(sid, rid){
+    this.loading=true;
+    this.iframevalue = "http://localhost:4200/chatframe/"+sid+"/"+rid;
+    this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.iframevalue);  
+    console.log(this.iframevalue);
   }
 
 }

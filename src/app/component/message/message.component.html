@@ -1,0 +1,13 @@
+<div class="c-wrapper-box">
+    <div class="c-wrapper-box-l">
+        <ul>
+            <li (click)="selectedUser('88','99')">User 1('88','99')</li>
+            <li (click)="selectedUser('100','99')">User 2('100','99')</li>
+            <li (click)="selectedUser('222','992')">User 3('222','992')</li>
+        </ul>
+    </div>
+    <div class="c-wrapper-box-r">
+        <div *ngIf="loading" >Loading......</div>
+        <iframe class="c-wrapper" (load)="onloading()" [src]="url"></iframe>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<!-- <div class="c-panel">
+  <div class="c-panel-header">
+header
+  </div>
+  <div class="c-panel-body">
+body
+  </div>
+  <div class="c-panel-footer">
+footer
+  </div>
+</div> -->
+
+<div class="panel-group c-window">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse in collapse">
+      <div class="panel-body" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+        {{sid}}
+
+
+        this 
+
+        {{rid}}
+
+        <ul>
+          <li *ngFor="let ms of msglist" >{{ms.msg}}</li>
+        </ul>
+      </div>
+      <div class="panel-footer">
+
+        <form (keydown)="keyDownFunction($event)">
+          <input type="text" [(ngModel)]="msg" autocomplete="off" name="msg" class="form-control"/>
+        </form>        
+      </div>
+    </div>
+  </div>
+</div>

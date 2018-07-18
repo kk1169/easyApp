@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.c-wrapper-box {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 500px;
+  border: 1px solid #ddd;
+}
+
+.c-wrapper-box .c-wrapper-box-l {
+  width: 20%;
+  float: left;
+  display: block;
+  height: 499px;
+  border-right: 1px solid #ddd;
+}
+
+.c-wrapper-box .c-wrapper-box-r {
+  width: 80%;
+  float: right;
+  display: block;
+  height: 499px;
+}
+
+.c-wrapper-box .c-wrapper-box-r .c-wrapper {
+  float: left;
+  border: none;
+  width: 100%;
+  display: block;
+  height: 499px;
+}
+
+.c-panel {
+  width: 100%;
+  float: left;
+  position: relative;
+  border: 1px solid #ddd;
+}
+
+.c-panel .c-panel-header {
+  position: fixed;
+  bottom: 90%;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.c-panel .c-panel-body {
+  position: fixed;
+  bottom: 10%;
+  left: 0;
+  height: 80%;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.c-panel .c-panel-footer {
+  position: fixed;
+  display: block;
+  bottom: 0%;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.c-window {
+  margin-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+.c-window .panel {
+  border: none;
+  border-radius: 0;
+}
+
+.c-window .panel .panel-body {
+  height: 428px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.c-window .panel .panel-footer {
+  padding: 0;
+}
+
+.c-window .panel .panel-footer .form-control {
+  border-left: none;
+  border-right: none;
+}
+/*# sourceMappingURL=style.css.map */

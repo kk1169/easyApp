@@ -29,6 +29,7 @@ import { HeaderService } from './services/header/header.service';
 import { AuthGuard } from './_guards/auth.guard';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
 import { ChatComponent } from './component/chat/chat.component';
+import { ChatWindowComponent } from './component/chat-window/chat-window.component';
 
 const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
 
@@ -43,7 +44,8 @@ const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
     HeaderComponent,
     SidebarComponent,
     PageNotFoundComponent,
-    ChatComponent
+    ChatComponent,
+    ChatWindowComponent
   ],
   imports: [
     BrowserModule,
